@@ -10,8 +10,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/ProjectPlank/go-commons/constants"
-	"github.com/ProjectPlank/go-commons/logger"
+	"github.com/PlankProject/go-commons/constants"
+	"github.com/PlankProject/go-commons/logger"
 	"go.uber.org/multierr"
 )
 
