@@ -1,4 +1,4 @@
-module github.com/PlankProject/go-commons
+module github.com/PlanckProject/go-commons
 
 go 1.13
 

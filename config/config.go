@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/PlankProject/go-commons/logger"
+	"github.com/PlanckProject/go-commons/logger"
 	"github.com/spf13/viper"
 )
 
