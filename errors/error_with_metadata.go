@@ -10,6 +10,7 @@ type ErrorWithMetadata interface {
 	error
 	fmt.Stringer
 
+	ErrorValue() string
 	Metadata() interface{}
 
 	SetError(string) ErrorWithMetadata
