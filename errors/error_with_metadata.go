@@ -33,7 +33,15 @@ func (e *errWithMetadataImpl) Error() string {
 func (e *errWithMetadataImpl) String() string {
 	metadata, _ := e.metadataVal.(string)
 
-	return fmt.Sprintf("%s:%s", e.errorVal, metadata)
+	if len(e.errorVal) != 0 && len(metadata) != 0 {
+		return fmt.Sprintf("%s:%s", e.errorVal, metadata)
+	} else if len(e.errorVal) != 0 {
+		return e.errorVal
+	} else if len(metadata) != 0 {
+		return fmt.Sprintf("ERROR:%s", metadata)
+	} else {
+		return ""
+	}
 }
 
 func (e *errWithMetadataImpl) ErrorValue() string {
